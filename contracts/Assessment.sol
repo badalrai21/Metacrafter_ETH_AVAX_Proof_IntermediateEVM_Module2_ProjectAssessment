@@ -6,6 +6,9 @@ contract Assessment {
     uint256 public favoriteNumber;
     address public owner;
 
+    event MessageChanged(string newMessage);
+    event FavoriteNumberChanged(uint256 newFavoriteNumber);
+
     constructor(string memory initialMessage, uint256 initialNumber) {
         message = initialMessage;
         favoriteNumber = initialNumber;
@@ -19,6 +22,7 @@ contract Assessment {
     function setMessage(string memory newMessage) public {
         require(msg.sender == owner, "Only the owner can set the message");
         message = newMessage;
+        emit MessageChanged(newMessage);
     }
 
     function getFavoriteNumber() public view returns (uint256) {
@@ -28,5 +32,6 @@ contract Assessment {
     function setFavoriteNumber(uint256 newNumber) public {
         require(msg.sender == owner, "Only the owner can set the favorite number");
         favoriteNumber = newNumber;
+        emit FavoriteNumberChanged(newNumber);
     }
 }
