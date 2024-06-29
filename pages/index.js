@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
-import assessmentAbi from "./artifacts/contracts/Assessment.sol/Assessment.json";
+import assessmentAbi from "../artifacts/contracts/Assessment.sol/Assessment.json";
 
 export default function App() {
   const [ethWallet, setEthWallet] = useState(undefined);
@@ -69,7 +69,7 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Blockchain Interaction</h1>
+        <h1>Welcome to the Assessment DApp</h1>
         <p>Your Account: {account}</p>
         <div>
           <p>Message: {message}</p>
@@ -92,7 +92,33 @@ export default function App() {
           <button onClick={updateFavoriteNumber}>Update Favorite Number</button>
         </div>
         {!account && <button onClick={connectAccount}>Connect MetaMask</button>}
+        <footer>
+          <p>Made by: Badal Kumar Rai</p>
+        </footer>
       </header>
+      <style jsx>{`
+        .App-header {
+          text-align: center;
+        }
+        input {
+          margin: 0.5rem;
+        }
+        button {
+          margin: 0.5rem;
+          padding: 0.5rem 1rem;
+          background-color: #0070f3;
+          color: white;
+          border: none;
+          border-radius: 0.25rem;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: #005bb5;
+        }
+        footer {
+          margin-top: 2rem;
+        }
+      `}</style>
     </div>
   );
 }
