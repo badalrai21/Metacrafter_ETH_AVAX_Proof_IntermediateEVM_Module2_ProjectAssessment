@@ -89,7 +89,7 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to the Assessment DApp</h1>
+        <h1>Blockchain Message Manager</h1>
         <p>Your Account: {account}</p>
         <div className="section">
           <h2>Message</h2>
