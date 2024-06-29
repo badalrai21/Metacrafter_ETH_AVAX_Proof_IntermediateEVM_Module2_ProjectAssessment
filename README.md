@@ -95,17 +95,17 @@ Remix Documentation: Learn how to use Remix, the online Solidity IDE, with detai
 
     
 ### FAQs
-Q: How do I update the message?
-A: Use the "Update Message" function with the new message. Confirm the transaction in MetaMask.
+Q: How do I update the message?  
+A: Use the "Update Message" function with the new message. Confirm the transaction in MetaMask.  
 
-Q: How do I update the favorite number?
-A: Use the "Update Favorite Number" function with the new number. Confirm the transaction in MetaMask.
+Q: How do I update the favorite number?  
+A: Use the "Update Favorite Number" function with the new number. Confirm the transaction in MetaMask.  
 
-Q: How do I set the message length?
-A: Use the "Set Message Length" function with the desired maximum length. Confirm the transaction in MetaMask.
+Q: How do I set the message length?  
+A: Use the "Set Message Length" function with the desired maximum length. Confirm the transaction in MetaMask.  
 
-Q: How do I view the current message and favorite number?
-A: Connect your MetaMask wallet and the DApp will automatically display the current message and favorite number.  
+Q: How do I view the current message and favorite number?  
+A: Connect your MetaMask wallet and the DApp will automatically display the current message and favorite number.    
   
 
 ### Contact
