@@ -1,4 +1,5 @@
 # Metacrafter_ETH_AVAX_Proof_IntermediateEVM_Module2_ProjectAssessment
+
 Blockchain Message Manager is a decentralized application (DApp) designed to provide users with a hands-on experience in interacting with Solidity smart contracts deployed on the Ethereum blockchain. Built using React with Next.js for the frontend, this platform allows users to manage ```messages```, ```favorite numbers```, and explore dynamic contract functionalities directly through their web browser. Whether you're new to blockchain technology or an experienced developer, this application offers a user-friendly environment to learn, experiment, and engage with Ethereum smart contracts.
 
 ## Description
@@ -19,7 +20,31 @@ After cloning the GitHub repository, follow these steps to get the code running 
   ``` javascript
     npm install
   ```
+2. Open Additional Terminals: Open two additional terminals within your VS Code environment.
 
+3. Start Local Ethereum Node: In the second terminal, start a local Ethereum node using Hardhat:
+ ``` javascript
+    npx hardhat node
+  ```
+This command initializes a local Ethereum network on your machine.
+
+4. Deploy the Smart Contract: In the third terminal, deploy the smart contract to your local network:
+``` javascript
+    npx hardhat run --network localhost scripts/deploy.js
+```
+Ensure that the deployment script (scripts/deploy.js) is correctly configured to deploy your Solidity smart contract.
+
+5. Launch the Frontend: Back in the first terminal, start the Next.js development server to launch the frontend:
+``` javascript
+    npm run dev
+```
+The development server starts, and the DApp should now be accessible at http://localhost:3000.
+
+6. Explore the DApp: Connect your MetaMask wallet to interact with the DApp on the local Ethereum network. You can manage the message, update the favorite number, and explore dynamic message length functionalities.
+ By following these steps, you can set up, deploy, and run the decentralized application locally on your machine.
+
+
+   
 Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., Hotel.sol). Copy and paste the following code into the file:
 
 ```javascript
