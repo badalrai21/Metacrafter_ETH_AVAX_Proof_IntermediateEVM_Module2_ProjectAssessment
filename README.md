@@ -1,4 +1,5 @@
-# Metacrafter_ETH_AVAX_Proof_IntermediateEVM_Module2_ProjectAssessment
+# Blockchain Message Manager
+## Metacrafter_ETH_AVAX_Proof_IntermediateEVM_Module2_ProjectAssessment
 
 Blockchain Message Manager is a decentralized application (DApp) designed to provide users with a hands-on experience in interacting with Solidity smart contracts deployed on the Ethereum blockchain. Built using React with Next.js for the frontend, this platform allows users to manage ```messages```, ```favorite numbers```, and explore dynamic contract functionalities directly through their web browser. Whether you're new to blockchain technology or an experienced developer, this application offers a user-friendly environment to learn, experiment, and engage with Ethereum smart contracts.
 
@@ -16,137 +17,55 @@ This project showcases a decentralized application (DApp) built using Solidity s
 ### Executing the Program
 After cloning the GitHub repository, follow these steps to get the code running on your computer:
 
-1. Install Dependencies: Inside the project directory, in the terminal, install dependencies using npm:
+#### 1. Install Dependencies: Inside the project directory, in the terminal, install dependencies using npm:
   ``` javascript
     npm install
   ```
-2. Open Additional Terminals: Open two additional terminals within your VS Code environment.
+#### 2. Open Additional Terminals: Open two additional terminals within your VS Code environment.
 
-3. Start Local Ethereum Node: In the second terminal, start a local Ethereum node using Hardhat:
+#### 3. Start Local Ethereum Node: In the second terminal, start a local Ethereum node using Hardhat:
  ``` javascript
     npx hardhat node
   ```
 This command initializes a local Ethereum network on your machine.
 
-4. Deploy the Smart Contract: In the third terminal, deploy the smart contract to your local network:
+#### 4. Deploy the Smart Contract: In the third terminal, deploy the smart contract to your local network:
 ``` javascript
     npx hardhat run --network localhost scripts/deploy.js
 ```
 Ensure that the deployment script (scripts/deploy.js) is correctly configured to deploy your Solidity smart contract.
 
-5. Launch the Frontend: Back in the first terminal, start the Next.js development server to launch the frontend:
+#### 5. Launch the Frontend: Back in the first terminal, start the Next.js development server to launch the frontend:
 ``` javascript
     npm run dev
 ```
 The development server starts, and the DApp should now be accessible at http://localhost:3000.
 
-6. Explore the DApp: Connect your MetaMask wallet to interact with the DApp on the local Ethereum network. You can manage the message, update the favorite number, and explore dynamic message length functionalities.
+#### 6. Explore the DApp: Connect your MetaMask wallet to interact with the DApp on the local Ethereum network. You can manage the message, update the favorite number, and explore dynamic message length functionalities.
  By following these steps, you can set up, deploy, and run the decentralized application locally on your machine.
 
 
    
-Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., Hotel.sol). Copy and paste the following code into the file:
-
-```javascript
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.26;
-
-contract Hotel {
-    address public owner;
-    uint256 public roomCount;
-
-    struct Room {
-        uint256 id;
-        string name;
-        uint256 price;
-        bool isAvailable;
-    }
-
-    mapping(uint256 => Room) public rooms;
-
-    constructor() {
-        owner = msg.sender;
-    }
-
-    modifier onlyOwner() {
-        require(msg.sender == owner, "Only the owner can perform this action");
-        _;
-    }
-
-    event RoomAdded(uint256 id, string name, uint256 price);
-    event RoomUpdated(uint256 id, string name, uint256 price, bool isAvailable);
-
-    function addRoom(uint256 _id, string memory _name, uint256 _price) public onlyOwner {
-        require(_price > 0, "Price must be greater than zero");
-
-        rooms[_id] = Room(_id, _name, _price, true);
-        roomCount++;
-
-        emit RoomAdded(_id, _name, _price);
-    }
-
-    function updateRoom(uint256 _id, string memory _name, uint256 _price, bool _isAvailable) public onlyOwner {
-        require(_price > 0, "Price must be greater than zero");
-
-        Room storage room = rooms[_id];
-        if (bytes(room.name).length == 0) {
-            revert("Room does not exist");
-        }
-
-        room.name = _name;
-        room.price = _price;
-        room.isAvailable = _isAvailable;
-
-        emit RoomUpdated(_id, _name, _price, _isAvailable);
-    }
-
-    function getRoom(uint256 _id) public view returns (string memory, uint256, bool) {
-        Room storage room = rooms[_id];
-        require(bytes(room.name).length > 0, "Room does not exist");
-        return (room.name, room.price, room.isAvailable);
-    }
-
-    function totalRooms() public view returns (uint256) {
-        assert(roomCount >= 0);
-        return roomCount;
-    }
-}
-
-```
-
-## Compiling the Code
-➛ Open the "Solidity Compiler" tab in the left-hand sidebar.  
-➛ Ensure the "Compiler" option is set to "0.8.18" (or another compatible version).  
-➛ Click the "Compile Hotel.sol" button.   
-
-## Deploying the Contract
-➛ Open the "Deploy & Run Transactions" tab in the left-hand sidebar.  
-➛ Select the "Hotel" contract from the dropdown menu.  
-➛ Click the "Deploy" button.  
-
 ### Interacting with the Contract
-#### 1. Add a Room:
+#### 1. View Current Message and Favorite Number:
 
-➝ Expand the addRoom function in the deployed contract section.  
-➝ Enter the parameters: _id, _name, _price.  
-➝ Click transact to add the room.  
+➝ Connect your MetaMask wallet.  
+➝ The DApp will display the current message and favorite number automatically.  
 
-#### 2. Update a Room:
+#### 2. Update the Message:
 
-➝ Expand the updateRoom function in the deployed contract section.  
-➝ Enter the parameters: _id, _name, _price, _isAvailable.  
-➝ Click transact to update the room.  
+➝ Enter a new message in the input field.  
+➝ Click "Update Message" and confirm the transaction in MetaMask.  
 
-#### 3. View a Room:
+#### 3. Update the Favorite Number:
 
-➝ Expand the getRoom function in the deployed contract section.  
-➝ Enter the _id of the room you want to view.  
-➝ Click call to view the room details.  
+➝ Enter a new favorite number in the input field.  
+➝ Click "Update Favorite Number" and confirm the transaction in MetaMask.    
 
-#### 4. Get Total Rooms:
+#### 4. Set Message Length:
 
-➝ Expand the totalRooms function in the deployed contract section.  
-➝ Click call to view the total number of rooms.  
+➝ Enter a new maximum length for the message in the input field.  
+➝ Click "Set Message Length" and confirm the transaction in MetaMask.  
 
 ## Help
 If you encounter any issues or have questions about this project, there are several resources available to assist you:
@@ -166,17 +85,26 @@ Remix Documentation: Learn how to use Remix, the online Solidity IDE, with detai
 ##### 3. Deployment Issues:
 
 ➝ Make sure you are connected to the correct Ethereum network (e.g., Mainnet, Ropsten, Rinkeby).  
-➝ Ensure your Ethereum wallet is unlocked and has sufficient funds.  
+➝ Ensure your Ethereum wallet is unlocked and has sufficient funds.
+##### 4. MetaMask Connection Problems:
+
+➝ Ensure the MetaMask extension is installed and enabled in your browser.
+➝ Check that you are logged into MetaMask and have selected the correct network.
+➝ If the DApp doesn't detect MetaMask, try refreshing the page or restarting your browser.
+➝ Make sure you have granted the DApp permission to access your MetaMask account.
 
 ### FAQs
-Q: How do I add a new room?  
-A: Use the addRoom function with the required parameters: _id, _name, and _price. Ensure the _price is greater than zero.
+Q: How do I update the message?
+A: Use the "Update Message" function with the new message. Confirm the transaction in MetaMask.
 
-Q: How do I update a room?  
-A: Use the updateRoom function with the room's _id, new _name, new _price, and _isAvailable status. Ensure the room exists before updating.
+Q: How do I update the favorite number?
+A: Use the "Update Favorite Number" function with the new number. Confirm the transaction in MetaMask.
 
-Q: How do I check the total number of rooms?  
-A: Use the totalRooms function to get the current count of rooms.
+Q: How do I set the message length?
+A: Use the "Set Message Length" function with the desired maximum length. Confirm the transaction in MetaMask.
+
+Q: How do I view the current message and favorite number?
+A: Connect your MetaMask wallet and the DApp will automatically display the current message and favorite number.
 
 ### Contact
 If you need further assistance, feel free to reach out:
@@ -188,7 +116,7 @@ GitHub Issues: Report issues or suggest enhancements on our GitHub Issues page.
 Join the community to discuss the project and get help from other user:
 LinekdIn: [@BadalRai](https://www.linkedin.com/in/badal-kumar-rai-a0151b259/)  
 Discord: Join our Discord Server [@NO2](https://discord.gg/Dnw4ZjEg)    
-We hope this information helps you get the most out of our Hotel Management Smart Contract project. If you have any feedback or suggestions, please let us know!
+I hope this information helps you get the most out of our Blockchain Message Manager Smart Contract project. If you have any feedback or suggestions, please let us know!
 
 ## Authors
 
