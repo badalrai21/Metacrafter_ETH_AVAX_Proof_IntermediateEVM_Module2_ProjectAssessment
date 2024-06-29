@@ -51,24 +51,20 @@ The development server starts, and the DApp should now be accessible at http://l
 
 
    
-### Interacting with the Contract
-#### 1. View Current Message and Favorite Number:
-
+## Interacting with the Contract
+### 1. View Current Message and Favorite Number:
 ➝ Connect your MetaMask wallet.  
 ➝ The DApp will display the current message and favorite number automatically.  
 
-#### 2. Update the Message:
-
+### 2. Update the Message:
 ➝ Enter a new message in the input field.  
 ➝ Click "Update Message" and confirm the transaction in MetaMask.  
 
-#### 3. Update the Favorite Number:
-
+### 3. Update the Favorite Number:
 ➝ Enter a new favorite number in the input field.  
 ➝ Click "Update Favorite Number" and confirm the transaction in MetaMask.    
 
-#### 4. Set Message Length:
-
+### 4. Set Message Length:
 ➝ Enter a new maximum length for the message in the input field.  
 ➝ Click "Set Message Length" and confirm the transaction in MetaMask.  
 
@@ -77,22 +73,21 @@ If you encounter any issues or have questions about this project, there are seve
 
 ### Documentation
 Solidity Documentation: Comprehensive documentation for the Solidity programming language, including syntax and features. Visit Solidity Documentation.
-Remix Documentation: Learn how to use Remix, the online Solidity IDE, with detailed guides and examples. Visit Remix Documentation.  
+Remix Documentation: Learn how to use Remix, the online Solidity IDE, with detailed guides and examples. Visit Remix Documentation.    
 ##### Common Issues
 ##### 1. Insufficient Gas:
-
 ➝ Ensure you have enough Ether in your account to cover the transaction gas fees.  
 ➝ Try increasing the gas limit for your transaction.  
-##### 2. Compiler Errors:
 
+##### 2. Compiler Errors:
 ➝ Verify that you are using a compatible Solidity compiler version (e.g., 0.8.26).  
 ➝ Double-check your contract code for syntax errors.  
+  
 ##### 3. Deployment Issues:
-
 ➝ Make sure you are connected to the correct Ethereum network (e.g., Mainnet, Ropsten, Rinkeby).  
 ➝ Ensure your Ethereum wallet is unlocked and has sufficient funds.
+  
 ##### 4. MetaMask Connection Problems:
-
 ➝ Ensure the MetaMask extension is installed and enabled in your browser.
 ➝ Check that you are logged into MetaMask and have selected the correct network.
 ➝ If the DApp doesn't detect MetaMask, try refreshing the page or restarting your browser.
