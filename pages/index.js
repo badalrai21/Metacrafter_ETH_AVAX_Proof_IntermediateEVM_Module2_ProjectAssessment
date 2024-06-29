@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
-import assessmentAbi from "./artifacts/contracts/Assessment.sol/Assessment.json";
+import assessmentAbi from "../artifacts/contracts/Assessment.sol/Assessment.json";
 
 export default function App() {
   const [ethWallet, setEthWallet] = useState(undefined);
