@@ -5,10 +5,10 @@ Blockchain Message Manager is a decentralized application (DApp) designed to pro
 This project showcases a decentralized application (DApp) built using Solidity smart contracts and a React frontend powered by Next.js. The DApp allows users to interact with the Ethereum blockchain, specifically with a smart contract that manages a message and a favorite number. Additionally, the contract includes functionality to set the ```message length``` dynamically.
 
 ## Features
-➛ Smart Contract Interaction: Users can connect their MetaMask wallet to interact with the deployed Solidity smart contract.
-➛ Message Management: Users can view and update a message stored on the blockchain.
-➛ Favorite Number: Users can view and update their favorite number through the DApp.
-➛ Dynamic Message Length: The contract allows users to set the maximum allowed length for the message, demonstrating dynamic contract functionalities.  
+➛ Smart Contract Interaction: Users can connect their MetaMask wallet to interact with the deployed Solidity smart contract.  
+➛ Message Management: Users can view and update a message stored on the blockchain.  
+➛ Favorite Number: Users can view and update their favorite number through the DApp.  
+➛ Dynamic Message Length: The contract allows users to set the maximum allowed length for the message, demonstrating dynamic contract functionalities.    
 
 
 ## Getting Started
@@ -16,7 +16,7 @@ This project showcases a decentralized application (DApp) built using Solidity s
 After cloning the GitHub repository, follow these steps to get the code running on your computer:
 
 1. Install Dependencies: Inside the project directory, in the terminal, install dependencies using npm:
-  ```
+  ``` javascript
     npm install
   ```
 
