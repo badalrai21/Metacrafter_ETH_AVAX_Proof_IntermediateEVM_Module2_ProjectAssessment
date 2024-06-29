@@ -88,11 +88,12 @@ Remix Documentation: Learn how to use Remix, the online Solidity IDE, with detai
 ➝ Ensure your Ethereum wallet is unlocked and has sufficient funds.
   
 ##### 4. MetaMask Connection Problems:
-➝ Ensure the MetaMask extension is installed and enabled in your browser.
-➝ Check that you are logged into MetaMask and have selected the correct network.
-➝ If the DApp doesn't detect MetaMask, try refreshing the page or restarting your browser.
-➝ Make sure you have granted the DApp permission to access your MetaMask account.
+➝ Ensure the MetaMask extension is installed and enabled in your browser.  
+➝ Check that you are logged into MetaMask and have selected the correct network.  
+➝ If the DApp doesn't detect MetaMask, try refreshing the page or restarting your browser.  
+➝ Make sure you have granted the DApp permission to access your MetaMask account.  
 
+    
 ### FAQs
 Q: How do I update the message?
 A: Use the "Update Message" function with the new message. Confirm the transaction in MetaMask.
@@ -104,7 +105,8 @@ Q: How do I set the message length?
 A: Use the "Set Message Length" function with the desired maximum length. Confirm the transaction in MetaMask.
 
 Q: How do I view the current message and favorite number?
-A: Connect your MetaMask wallet and the DApp will automatically display the current message and favorite number.
+A: Connect your MetaMask wallet and the DApp will automatically display the current message and favorite number.  
+  
 
 ### Contact
 If you need further assistance, feel free to reach out:
@@ -112,6 +114,7 @@ If you need further assistance, feel free to reach out:
 Email: badalrai242@gmail.com  
 GitHub Issues: Report issues or suggest enhancements on our GitHub Issues page.  
 
+  
 #### Community  
 Join the community to discuss the project and get help from other user:
 LinekdIn: [@BadalRai](https://www.linkedin.com/in/badal-kumar-rai-a0151b259/)  
