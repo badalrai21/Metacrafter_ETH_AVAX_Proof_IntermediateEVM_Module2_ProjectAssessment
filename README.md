@@ -1,6 +1,5 @@
 # Metacrafter_ETH_AVAX_Proof_IntermediateEVM_Module2_ProjectAssessment
-
-This Solidity program is a simple demonstration of error handling. The purpose of the program is to manage hotel room information while demonstrating the use of ```require()```, ```assert()```, and ```revert()``` for error handling.
+Blockchain Message Manager is a decentralized application (DApp) designed to provide users with a hands-on experience in interacting with Solidity smart contracts deployed on the Ethereum blockchain. Built using React with Next.js for the frontend, this platform allows users to manage ```messages```, ```favorite numbers```, and explore dynamic contract functionalities directly through their web browser. Whether you're new to blockchain technology or an experienced developer, this application offers a user-friendly environment to learn, experiment, and engage with Ethereum smart contracts.
 
 ## Description
 This project showcases a decentralized application (DApp) built using Solidity smart contracts and a React frontend powered by Next.js. The DApp allows users to interact with the Ethereum blockchain, specifically with a smart contract that manages a message and a favorite number. Additionally, the contract includes functionality to set the message length dynamically.
