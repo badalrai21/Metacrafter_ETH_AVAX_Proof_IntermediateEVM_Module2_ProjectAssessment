@@ -17,8 +17,8 @@ This project showcases a decentralized application (DApp) built using Solidity s
 ### Executing the Program
 After cloning the GitHub repository, follow these steps to get the code running on your computer:
 
-#### *1. Install Dependencies:** Inside the project directory, in the terminal, install dependencies using npm:
-  ``` javascript
+#### 1. Install Dependencies:** Inside the project directory, in the terminal, install dependencies using npm:
+  ``` 
     npm install
   ```
 #### 2. Open Additional Terminals: Open two additional terminals within your VS Code environment.
