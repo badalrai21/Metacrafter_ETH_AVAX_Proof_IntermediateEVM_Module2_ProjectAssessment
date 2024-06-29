@@ -2,7 +2,7 @@
 Blockchain Message Manager is a decentralized application (DApp) designed to provide users with a hands-on experience in interacting with Solidity smart contracts deployed on the Ethereum blockchain. Built using React with Next.js for the frontend, this platform allows users to manage ```messages```, ```favorite numbers```, and explore dynamic contract functionalities directly through their web browser. Whether you're new to blockchain technology or an experienced developer, this application offers a user-friendly environment to learn, experiment, and engage with Ethereum smart contracts.
 
 ## Description
-This project showcases a decentralized application (DApp) built using Solidity smart contracts and a React frontend powered by Next.js. The DApp allows users to interact with the Ethereum blockchain, specifically with a smart contract that manages a message and a favorite number. Additionally, the contract includes functionality to set the message length dynamically.
+This project showcases a decentralized application (DApp) built using Solidity smart contracts and a React frontend powered by Next.js. The DApp allows users to interact with the Ethereum blockchain, specifically with a smart contract that manages a message and a favorite number. Additionally, the contract includes functionality to set the ```message length``` dynamically.
 
 ## Features
 ➛ Smart Contract Interaction: Users can connect their MetaMask wallet to interact with the deployed Solidity smart contract.
@@ -13,7 +13,12 @@ This project showcases a decentralized application (DApp) built using Solidity s
 
 ## Getting Started
 ### Executing the Program
-To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at [Remix](https://remix.ethereum.org/) (https://remix.ethereum.org/).
+After cloning the GitHub repository, follow these steps to get the code running on your computer:
+
+1. Install Dependencies: Inside the project directory, in the terminal, install dependencies using npm:
+  ```
+    npm install
+  ```
 
 Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., Hotel.sol). Copy and paste the following code into the file:
 
