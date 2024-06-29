@@ -4,15 +4,17 @@ pragma solidity ^0.8.9;
 contract Assessment {
     string public message;
     uint256 public favoriteNumber;
-    address public owner;
+    uint256 private value;
 
     event MessageChanged(string newMessage);
     event FavoriteNumberChanged(uint256 newFavoriteNumber);
+    event ValueChanged(uint256 newValue);
+    event MessageLengthSet(uint256 newLength);
 
     constructor(string memory initialMessage, uint256 initialNumber) {
         message = initialMessage;
         favoriteNumber = initialNumber;
-        owner = msg.sender;
+        value = 0;
     }
 
     function getMessage() public view returns (string memory) {
@@ -20,7 +22,6 @@ contract Assessment {
     }
 
     function setMessage(string memory newMessage) public {
-        require(msg.sender == owner, "Only the owner can set the message");
         message = newMessage;
         emit MessageChanged(newMessage);
     }
@@ -30,8 +31,15 @@ contract Assessment {
     }
 
     function setFavoriteNumber(uint256 newNumber) public {
-        require(msg.sender == owner, "Only the owner can set the favorite number");
         favoriteNumber = newNumber;
         emit FavoriteNumberChanged(newNumber);
+    }
+
+    function getValue() public view returns (uint256) {
+        return value;
+    }
+
+    function setMessageLength(uint256 newLength) public {
+        emit MessageLengthSet(newLength);
     }
 }
