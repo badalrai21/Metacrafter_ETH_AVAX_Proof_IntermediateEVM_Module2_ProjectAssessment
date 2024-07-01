@@ -1,16 +1,16 @@
 # Blockchain Message Manager
 ## Metacrafter_ETH_AVAX_Proof_IntermediateEVM_Module2_ProjectAssessment
 
-Blockchain Message Manager is a decentralized application (DApp) designed to provide users with a hands-on experience in interacting with Solidity smart contracts deployed on the Ethereum blockchain. Built using React with Next.js for the frontend, this platform allows users to manage ```messages```, ```favorite numbers```, and explore dynamic contract functionalities directly through their web browser. Whether you're new to blockchain technology or an experienced developer, this application offers a user-friendly environment to learn, experiment, and engage with Ethereum smart contracts.
+Blockchain Message Manager is a decentralized application ```(DApp)``` designed to provide users with a hands-on experience in interacting with ```Solidity``` smart contracts deployed on the Ethereum blockchain. Built using React with Next.js for the frontend, this platform allows users to manage ```messages```, ```favorite numbers```, and explore dynamic contract functionalities directly through their web browser. Whether you're new to ```blockchain``` technology or an experienced developer, this application offers a user-friendly environment to learn, experiment, and engage with Ethereum smart contracts.
 
 ## Description
-This project showcases a decentralized application (DApp) built using Solidity smart contracts and a React frontend powered by Next.js. The DApp allows users to interact with the Ethereum blockchain, specifically with a smart contract that manages a message and a favorite number. Additionally, the contract includes functionality to set the ```message length``` dynamically.
+This project showcases a ```decentralized application``` (DApp) built using Solidity smart contracts and a ```React frontend``` powered by Next.js. The DApp allows users to interact with the Ethereum blockchain, specifically with a smart contract that manages a message and a favorite number. Additionally, the contract includes functionality to set the ```message length``` dynamically.
 
 ## Features
-➛ Smart Contract Interaction: Users can connect their MetaMask wallet to interact with the deployed Solidity smart contract.  
-➛ Message Management: Users can view and update a message stored on the blockchain.  
-➛ Favorite Number: Users can view and update their favorite number through the DApp.  
-➛ Dynamic Message Length: The contract allows users to set the maximum allowed length for the message, demonstrating dynamic contract functionalities.    
+➛ ```Smart Contract Interaction```: Users can connect their MetaMask wallet to interact with the deployed Solidity smart contract.  
+➛ ```Message Management```: Users can view and update a message stored on the blockchain.  
+➛ ```Favorite Number```: Users can view and update their favorite number through the DApp.  
+➛ ```Dynamic Message Length```: The contract allows users to set the maximum allowed length for the message, demonstrating dynamic contract functionalities.    
 
 
 ## Getting Started
